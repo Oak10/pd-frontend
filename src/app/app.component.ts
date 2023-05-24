@@ -27,11 +27,6 @@ export class AppComponent implements OnInit {
         icon: 'pi pi-fw pi-cog',
         routerLink: ['configuration']
       },
-      {
-        label: 'Administration Page',
-        icon: 'pi pi-fw pi-lock',
-        routerLink: ['admin']
-      },
     ];
   }
 

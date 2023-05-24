@@ -22,7 +22,6 @@ import {MessageService} from 'primeng/api';
 import {DialogModule} from 'primeng/dialog';
 import {TableModule} from 'primeng/table'
 import { AccessDeniedComponent } from './components/access-denied/access-denied.component';
-import { AdminComponent } from './components/admin/admin.component';
 import { MovieService } from './services/movie.service';
 import { MovieComponent } from './components/movie/movie.component';
 import { ToolbarModule } from 'primeng/toolbar';
@@ -36,7 +35,6 @@ import { MailService } from './services/mail.service';
   declarations: [
     AppComponent,
     AccessDeniedComponent,
-    AdminComponent,
     MovieComponent,
     ConfigurationComponent,
   ],
