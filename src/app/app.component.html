@@ -1,0 +1,17 @@
+<p-menubar [model]="items">
+  <ng-template pTemplate="start">
+    <a href="/"> <img src="favicon.ico" height="40" class="mx-3 px-3 pt-0"> </a>
+  </ng-template>
+
+  <div class="p-toolbar-group-end">
+    <button iconPos="left" class="p-button-primary p-button-text p-button-plain" pButton
+    (click)="logout()" icon="pi pi-user" type="button" label="Log out"></button>
+
+
+  </div>
+
+</p-menubar>
+
+<div class="p-3 m-3">
+  <router-outlet></router-outlet>
+</div>
