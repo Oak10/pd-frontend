@@ -28,6 +28,7 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { ConfigurationComponent } from './components/configuration/configuration.component';
 import {CheckboxModule} from 'primeng/checkbox';
 import { MailService } from './services/mail.service';
+import { CardModule } from 'primeng/card';
 
 
 
@@ -58,6 +59,7 @@ import { MailService } from './services/mail.service';
     KeycloakAngularModule, // add keycloakAngular module
     // RadioButtonModule
     CheckboxModule,
+    CardModule
   ],
   providers: [ 
     {
