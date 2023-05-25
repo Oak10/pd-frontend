@@ -29,6 +29,7 @@ import { ConfigurationComponent } from './components/configuration/configuration
 import {CheckboxModule} from 'primeng/checkbox';
 import { MailService } from './services/mail.service';
 import { CardModule } from 'primeng/card';
+import { SearchMovieService } from './services/search-movie.service';
 
 
 
@@ -71,7 +72,8 @@ import { CardModule } from 'primeng/card';
     ConfirmationService,
     MailService,
     MessageService, 
-    MovieService],
+    MovieService,
+    SearchMovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,6 +3,7 @@ import { Movie } from 'src/app/common/movie';
 import { MovieService } from 'src/app/services/movie.service';
 import { MessageService, ConfirmationService} from 'primeng/api';
 import { Table } from 'primeng/table';
+import { SearchMovieService } from 'src/app/services/search-movie.service';
 
 @Component({
   selector: 'app-movie',
@@ -29,7 +30,8 @@ export class MovieComponent implements OnInit{
   constructor(
     private movieService: MovieService,
     private messageService: MessageService, 
-    private confirmationService: ConfirmationService) { }
+    private confirmationService: ConfirmationService,
+    private searchMovieService: SearchMovieService) { }
 
     ngOnInit(): void {
         this.getAllMovies();
@@ -115,6 +117,17 @@ export class MovieComponent implements OnInit{
   hideDialogEdit() {
     this.editMovieDialog = false;
     this.submitted = false;
+  }
+
+  searchDescription(isNew: boolean) {
+    this.searchMovieService.searchMovieByTitle( isNew ? this.movieNew.title : this.movieToEdit.title ).subscribe(
+      data => { 
+        if (data){
+          this.movieNew.description = data.description;
+        }else{
+          this.showSuccess("Movie not Found");
+        }
+      })
   }
   
 }

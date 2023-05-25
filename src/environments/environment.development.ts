@@ -1,6 +1,7 @@
 export const environment = {
   production: true,
   serverUrl: '/api',
+  apiAllMovies: 'http://allmovies.dev.pd.com',
   apiUrl: 'http://moviesstorage.dev.pd.com',
   apiMailUrl: 'http://recommendation.dev.pd.com',
   keycloak: {

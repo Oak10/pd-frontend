@@ -1,6 +1,7 @@
 export const environment = {
   production: false,
   serverUrl: '/api',
+  apiAllMovies: 'http://localhost:8090',
   apiUrl: 'http://localhost:8888',
   apiMailUrl: 'http://localhost:8081',
   keycloak: {
