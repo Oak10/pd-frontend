@@ -9,7 +9,7 @@ export class MailService {
 
   constructor(private http: HttpClient){ }
 
-  private baseUrl = `${environment.apiMailUrl}/kafka/produce`;
+  private baseUrl = `${environment.apiMailUrl}/recommendation/produce`;
 
   sendMailNotification()  {
     console.log("send mail notification");
