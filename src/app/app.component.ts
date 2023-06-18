@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Watched Movies',
+        label: 'Watched Movies - Dev',
         icon: 'pi pi-fw pi-check-square',
         routerLink: ['movie']
       },
